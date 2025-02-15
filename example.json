@@ -1,0 +1,2648 @@
+{
+  "nextCursor": "n.1740020400000.hAuKG2mqMdvud6wNueFM",
+  "success": true,
+  "data": [
+    {
+      "eventID": "hAuKG2mqMdvud6wNueFM",
+      "sportID": "BASKETBALL",
+      "leagueID": "NBA",
+      "type": "match",
+      "info": {
+        "seasonWeek": "NBA 24/25"
+      },
+      "odds": {
+        "points-home-game-ml-home": {
+          "oddID": "points-home-game-ml-home",
+          "opposingOddID": "points-away-game-ml-away",
+          "marketName": "Moneyline",
+          "statID": "points",
+          "statEntityID": "home",
+          "periodID": "game",
+          "betTypeID": "ml",
+          "sideID": "home",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-580",
+          "bookOdds": "-833",
+          "openFairOdds": "-580",
+          "openBookOdds": "-833",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-800",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true,
+              "deeplink": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?fdId%5B0%5D=754.112150656&marketId%5B0%5D=42.479387677&selectionId%5B0%5D=5368712"
+            },
+            "paddypower": {
+              "odds": "-900",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "unknown": {
+              "odds": "-833",
+              "lastUpdatedAt": "2025-02-15T00:08:25.000Z",
+              "available": true
+            },
+            "betclic": {
+              "odds": "-1000",
+              "lastUpdatedAt": "2025-02-15T00:06:54.000Z",
+              "available": true
+            },
+            "sportsbet": {
+              "odds": "-833",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "mybookie": {
+              "odds": "-909",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "draftkings": {
+              "odds": "-800",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true,
+              "deeplink": "https://sportsbook.draftkings.com/event/31817440?outcomes=0ML78666481_1&sgp=1"
+            },
+            "neds": {
+              "odds": "-833",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "ladbrokes": {
+              "odds": "-833",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            },
+            "888sport": {
+              "odds": "-800",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "tab": {
+              "odds": "-769",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "betrsportsbook": {
+              "odds": "-769",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            },
+            "betfairsportsbook": {
+              "odds": "-909",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "betrivers": {
+              "odds": "-910",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "fourwinds": {
+              "odds": "-910",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "betparx": {
+              "odds": "-910",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "ballybet": {
+              "odds": "-910",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "unibet": {
+              "odds": "-909",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "tabtouch": {
+              "odds": "-910",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            },
+            "caesars": {
+              "odds": "-800",
+              "lastUpdatedAt": "2025-02-15T00:09:03.866Z",
+              "available": true
+            },
+            "williamhill": {
+              "odds": "-800",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "gtbets": {
+              "odds": "-800",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            },
+            "betfairexchange": {
+              "odds": "-909",
+              "lastUpdatedAt": "2025-02-15T00:08:26.000Z",
+              "available": true
+            },
+            "boylesports": {
+              "odds": "-900",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            },
+            "marathonbet": {
+              "odds": "-833",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "betway": {
+              "odds": "-800",
+              "lastUpdatedAt": "2025-02-15T00:08:25.000Z",
+              "available": true
+            },
+            "espnbet": {
+              "odds": "-1000",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "thescorebet": {
+              "odds": "-1000",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "suprabets": {
+              "odds": "-714",
+              "lastUpdatedAt": "2025-02-15T00:06:43.000Z",
+              "available": true
+            },
+            "nordicbet": {
+              "odds": "-833",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "betsson": {
+              "odds": "-833",
+              "lastUpdatedAt": "2025-02-15T00:08:25.000Z",
+              "available": true
+            },
+            "playup": {
+              "odds": "-833",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "topsport": {
+              "odds": "-909",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            }
+          }
+        },
+        "points-all-game-ou-under": {
+          "oddID": "points-all-game-ou-under",
+          "opposingOddID": "points-all-game-ou-over",
+          "marketName": "Over/Under",
+          "statID": "points",
+          "statEntityID": "all",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+101",
+          "bookOdds": "-110",
+          "fairOverUnder": "223.5",
+          "bookOverUnder": "223.5",
+          "openFairOdds": "+101",
+          "openBookOdds": "-110",
+          "openFairOverUnder": "223.5",
+          "openBookOverUnder": "223.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-110",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true,
+              "deeplink": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?fdId%5B0%5D=754.112351868&marketId%5B0%5D=42.479760460&selectionId%5B0%5D=7017824"
+            },
+            "sportsbet": {
+              "odds": "-111",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "mybookie": {
+              "odds": "-110",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "draftkings": {
+              "odds": "-112",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true,
+              "deeplink": "https://sportsbook.draftkings.com/event/31817440?outcomes=0OU78666481U22350_3&sgp=1"
+            },
+            "888sport": {
+              "odds": "-118",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "1xbet": {
+              "odds": "-110",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "betrivers": {
+              "odds": "-109",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "fourwinds": {
+              "odds": "-109",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "betparx": {
+              "odds": "-109",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "ballybet": {
+              "odds": "-109",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "virginbet": {
+              "odds": "-109",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "livescorebet": {
+              "odds": "-109",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "casumo": {
+              "odds": "-113",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "unibet": {
+              "odds": "-109",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "leovegas": {
+              "odds": "-120",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "grosvenor": {
+              "odds": "-112",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "tabtouch": {
+              "odds": "-110",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            },
+            "caesars": {
+              "odds": "-110",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:09:03.866Z",
+              "available": true
+            },
+            "gtbets": {
+              "odds": "-109",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            },
+            "unknown": {
+              "odds": "-111",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:25.000Z",
+              "available": true
+            },
+            "espnbet": {
+              "odds": "+120",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "thescorebet": {
+              "odds": "-110",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "nordicbet": {
+              "odds": "-109",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "betsson": {
+              "odds": "-109",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:25.000Z",
+              "available": true
+            },
+            "playup": {
+              "odds": "-108",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "topsport": {
+              "odds": "-114",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            }
+          }
+        },
+        "points-home-game-sp-home": {
+          "oddID": "points-home-game-sp-home",
+          "opposingOddID": "points-away-game-sp-away",
+          "marketName": "Spread",
+          "statID": "points",
+          "statEntityID": "home",
+          "periodID": "game",
+          "betTypeID": "sp",
+          "sideID": "home",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+101",
+          "bookOdds": "-109",
+          "fairSpread": "-12.5",
+          "bookSpread": "-13.5",
+          "openFairOdds": "+101",
+          "openBookOdds": "-109",
+          "openFairSpread": "-12.5",
+          "openBookSpread": "-13.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-108",
+              "spread": "-13.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true,
+              "deeplink": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?fdId%5B0%5D=754.112150657&marketId%5B0%5D=42.479387678&selectionId%5B0%5D=5368712"
+            },
+            "sportsbet": {
+              "odds": "-111",
+              "spread": "-13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "neds": {
+              "odds": "-111",
+              "spread": "-12.5",
+              "lastUpdatedAt": "2025-02-14T05:07:45.000Z",
+              "available": false
+            },
+            "ladbrokes": {
+              "odds": "-111",
+              "spread": "-12.5",
+              "lastUpdatedAt": "2025-02-14T05:07:46.000Z",
+              "available": false
+            },
+            "mybookie": {
+              "odds": "-110",
+              "spread": "-13",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "draftkings": {
+              "odds": "-110",
+              "spread": "-13",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true,
+              "deeplink": "https://sportsbook.draftkings.com/event/31817440?outcomes=0HC78666481N1300_1&sgp=1"
+            },
+            "888sport": {
+              "odds": "-105",
+              "spread": "-13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "tab": {
+              "odds": "-111",
+              "spread": "-13",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "1xbet": {
+              "odds": "-102",
+              "spread": "-13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "betrivers": {
+              "odds": "-109",
+              "spread": "-13.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "fourwinds": {
+              "odds": "-109",
+              "spread": "-13.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "betparx": {
+              "odds": "-109",
+              "spread": "-13.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "ballybet": {
+              "odds": "-109",
+              "spread": "-13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "casumo": {
+              "odds": "-113",
+              "spread": "-13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "unibet": {
+              "odds": "-109",
+              "spread": "-13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "leovegas": {
+              "odds": "-121",
+              "spread": "-13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "grosvenor": {
+              "odds": "-112",
+              "spread": "-13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "tabtouch": {
+              "odds": "-110",
+              "spread": "-13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            },
+            "caesars": {
+              "odds": "-110",
+              "spread": "-13",
+              "lastUpdatedAt": "2025-02-15T00:09:03.866Z",
+              "available": true
+            },
+            "gtbets": {
+              "odds": "-109",
+              "spread": "-13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            },
+            "unknown": {
+              "odds": "-118",
+              "spread": "-13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:25.000Z",
+              "available": true
+            },
+            "espnbet": {
+              "odds": "-110",
+              "spread": "-13.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "thescorebet": {
+              "odds": "-110",
+              "spread": "-13.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "nordicbet": {
+              "odds": "-111",
+              "spread": "-12.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "betsson": {
+              "odds": "-111",
+              "spread": "-12.5",
+              "lastUpdatedAt": "2025-02-15T00:08:25.000Z",
+              "available": true
+            },
+            "playup": {
+              "odds": "-111",
+              "spread": "-12.5",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "topsport": {
+              "odds": "-116",
+              "spread": "-12.5",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            }
+          }
+        },
+        "points-away-game-ml-away": {
+          "oddID": "points-away-game-ml-away",
+          "opposingOddID": "points-home-game-ml-home",
+          "marketName": "Moneyline",
+          "statID": "points",
+          "statEntityID": "away",
+          "periodID": "game",
+          "betTypeID": "ml",
+          "sideID": "away",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+580",
+          "bookOdds": "+550",
+          "openFairOdds": "+580",
+          "openBookOdds": "+550",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+560",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true,
+              "deeplink": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?fdId%5B0%5D=754.112150656&marketId%5B0%5D=42.479387677&selectionId%5B0%5D=8622709"
+            },
+            "paddypower": {
+              "odds": "+500",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "unknown": {
+              "odds": "+525",
+              "lastUpdatedAt": "2025-02-15T00:08:25.000Z",
+              "available": true
+            },
+            "betclic": {
+              "odds": "+430",
+              "lastUpdatedAt": "2025-02-15T00:06:54.000Z",
+              "available": true
+            },
+            "sportsbet": {
+              "odds": "+580",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "mybookie": {
+              "odds": "+516",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "draftkings": {
+              "odds": "+550",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true,
+              "deeplink": "https://sportsbook.draftkings.com/event/31817440?outcomes=0ML78666481_3&sgp=1"
+            },
+            "neds": {
+              "odds": "+550",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "ladbrokes": {
+              "odds": "+550",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            },
+            "888sport": {
+              "odds": "+510",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "tab": {
+              "odds": "+550",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "betrsportsbook": {
+              "odds": "+500",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            },
+            "betfairsportsbook": {
+              "odds": "+500",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "betrivers": {
+              "odds": "+600",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "fourwinds": {
+              "odds": "+600",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "betparx": {
+              "odds": "+550",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "ballybet": {
+              "odds": "+600",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "unibet": {
+              "odds": "+550",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "tabtouch": {
+              "odds": "+550",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            },
+            "caesars": {
+              "odds": "+550",
+              "lastUpdatedAt": "2025-02-15T00:09:03.866Z",
+              "available": true
+            },
+            "williamhill": {
+              "odds": "+550",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "gtbets": {
+              "odds": "+550",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            },
+            "betfairexchange": {
+              "odds": "-417",
+              "lastUpdatedAt": "2025-02-15T00:08:26.000Z",
+              "available": true
+            },
+            "boylesports": {
+              "odds": "+500",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            },
+            "marathonbet": {
+              "odds": "+540",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "betway": {
+              "odds": "+550",
+              "lastUpdatedAt": "2025-02-15T00:08:25.000Z",
+              "available": true
+            },
+            "espnbet": {
+              "odds": "+600",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "thescorebet": {
+              "odds": "+600",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "suprabets": {
+              "odds": "+653",
+              "lastUpdatedAt": "2025-02-15T00:06:43.000Z",
+              "available": true
+            },
+            "nordicbet": {
+              "odds": "+560",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "betsson": {
+              "odds": "+560",
+              "lastUpdatedAt": "2025-02-15T00:08:25.000Z",
+              "available": true
+            },
+            "playup": {
+              "odds": "+525",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "topsport": {
+              "odds": "+500",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            }
+          }
+        },
+        "points-all-game-ou-over": {
+          "oddID": "points-all-game-ou-over",
+          "opposingOddID": "points-all-game-ou-under",
+          "marketName": "Over/Under",
+          "statID": "points",
+          "statEntityID": "all",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-101",
+          "bookOdds": "-112",
+          "fairOverUnder": "223.5",
+          "bookOverUnder": "223.5",
+          "openFairOdds": "-101",
+          "openBookOdds": "-112",
+          "openFairOverUnder": "223.5",
+          "openBookOverUnder": "223.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-110",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true,
+              "deeplink": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?fdId%5B0%5D=754.112351868&marketId%5B0%5D=42.479760460&selectionId%5B0%5D=7017823"
+            },
+            "sportsbet": {
+              "odds": "-111",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "mybookie": {
+              "odds": "-110",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "draftkings": {
+              "odds": "-108",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true,
+              "deeplink": "https://sportsbook.draftkings.com/event/31817440?outcomes=0OU78666481O22350_1&sgp=1"
+            },
+            "888sport": {
+              "odds": "-110",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "1xbet": {
+              "odds": "-105",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "betrivers": {
+              "odds": "-112",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "fourwinds": {
+              "odds": "-112",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "betparx": {
+              "odds": "-112",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "ballybet": {
+              "odds": "-112",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "virginbet": {
+              "odds": "-111",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "livescorebet": {
+              "odds": "-111",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "casumo": {
+              "odds": "-115",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "unibet": {
+              "odds": "-112",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "leovegas": {
+              "odds": "-122",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "grosvenor": {
+              "odds": "-114",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "tabtouch": {
+              "odds": "-113",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            },
+            "caesars": {
+              "odds": "-110",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:09:03.866Z",
+              "available": true
+            },
+            "gtbets": {
+              "odds": "-109",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            },
+            "unknown": {
+              "odds": "-125",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:25.000Z",
+              "available": true
+            },
+            "espnbet": {
+              "odds": "-110",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "thescorebet": {
+              "odds": "-110",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "nordicbet": {
+              "odds": "-114",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "betsson": {
+              "odds": "-114",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:25.000Z",
+              "available": true
+            },
+            "playup": {
+              "odds": "-114",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "topsport": {
+              "odds": "-122",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            }
+          }
+        },
+        "points-away-game-sp-away": {
+          "oddID": "points-away-game-sp-away",
+          "opposingOddID": "points-home-game-sp-home",
+          "marketName": "Spread",
+          "statID": "points",
+          "statEntityID": "away",
+          "periodID": "game",
+          "betTypeID": "sp",
+          "sideID": "away",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-101",
+          "bookOdds": "-112",
+          "fairSpread": "+12.5",
+          "bookSpread": "+13.5",
+          "openFairOdds": "-101",
+          "openBookOdds": "-112",
+          "openFairSpread": "+12.5",
+          "openBookSpread": "+13.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-112",
+              "spread": "+13.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true,
+              "deeplink": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?fdId%5B0%5D=754.112150657&marketId%5B0%5D=42.479387678&selectionId%5B0%5D=8622709"
+            },
+            "sportsbet": {
+              "odds": "-111",
+              "spread": "+13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "neds": {
+              "odds": "-111",
+              "spread": "+12.5",
+              "lastUpdatedAt": "2025-02-14T05:07:45.000Z",
+              "available": false
+            },
+            "ladbrokes": {
+              "odds": "-111",
+              "spread": "+12.5",
+              "lastUpdatedAt": "2025-02-14T05:07:46.000Z",
+              "available": false
+            },
+            "mybookie": {
+              "odds": "-110",
+              "spread": "+13",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "draftkings": {
+              "odds": "-110",
+              "spread": "+13",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true,
+              "deeplink": "https://sportsbook.draftkings.com/event/31817440?outcomes=0HC78666481P1300_3&sgp=1"
+            },
+            "888sport": {
+              "odds": "-118",
+              "spread": "+13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "tab": {
+              "odds": "-111",
+              "spread": "+13",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "1xbet": {
+              "odds": "-114",
+              "spread": "+13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "betrivers": {
+              "odds": "-112",
+              "spread": "+13.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "fourwinds": {
+              "odds": "-112",
+              "spread": "+13.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "betparx": {
+              "odds": "-112",
+              "spread": "+13.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "ballybet": {
+              "odds": "-112",
+              "spread": "+13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "casumo": {
+              "odds": "-114",
+              "spread": "+13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "unibet": {
+              "odds": "-111",
+              "spread": "+13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "leovegas": {
+              "odds": "-122",
+              "spread": "+13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "grosvenor": {
+              "odds": "-113",
+              "spread": "+13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "tabtouch": {
+              "odds": "-112",
+              "spread": "+13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            },
+            "caesars": {
+              "odds": "-110",
+              "spread": "+13",
+              "lastUpdatedAt": "2025-02-15T00:09:03.866Z",
+              "available": true
+            },
+            "gtbets": {
+              "odds": "-109",
+              "spread": "+13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            },
+            "unknown": {
+              "odds": "-118",
+              "spread": "+13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:25.000Z",
+              "available": true
+            },
+            "espnbet": {
+              "odds": "-110",
+              "spread": "+13.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "thescorebet": {
+              "odds": "-110",
+              "spread": "+13.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "nordicbet": {
+              "odds": "-114",
+              "spread": "+12.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "betsson": {
+              "odds": "-114",
+              "spread": "+12.5",
+              "lastUpdatedAt": "2025-02-15T00:08:25.000Z",
+              "available": true
+            },
+            "playup": {
+              "odds": "-110",
+              "spread": "+12.5",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "topsport": {
+              "odds": "-114",
+              "spread": "+12.5",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            }
+          }
+        },
+        "points-away-game-ou-under": {
+          "oddID": "points-away-game-ou-under",
+          "opposingOddID": "points-away-game-ou-over",
+          "marketName": "Charlotte Hornets Points Over/Under",
+          "statID": "points",
+          "statEntityID": "away",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-130",
+          "fairOverUnder": "104.5",
+          "bookOverUnder": "105.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-130",
+          "openFairOverUnder": "104.5",
+          "openBookOverUnder": "105.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "draftkings": {
+              "odds": "-130",
+              "overUnder": "105.5",
+              "lastUpdatedAt": "2025-02-14T23:30:09.000Z",
+              "available": true
+            }
+          }
+        },
+        "points-away-game-ou-over": {
+          "oddID": "points-away-game-ou-over",
+          "opposingOddID": "points-away-game-ou-under",
+          "marketName": "Charlotte Hornets Points Over/Under",
+          "statID": "points",
+          "statEntityID": "away",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "+100",
+          "fairOverUnder": "104.5",
+          "bookOverUnder": "105.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "104.5",
+          "openBookOverUnder": "105.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "draftkings": {
+              "odds": "+100",
+              "overUnder": "105.5",
+              "lastUpdatedAt": "2025-02-14T23:30:09.000Z",
+              "available": true
+            }
+          }
+        },
+        "points-home-game-ou-over": {
+          "oddID": "points-home-game-ou-over",
+          "opposingOddID": "points-home-game-ou-under",
+          "marketName": "Los Angeles Lakers Points Over/Under",
+          "statID": "points",
+          "statEntityID": "home",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+111",
+          "bookOdds": "+100",
+          "fairOverUnder": "119.5",
+          "bookOverUnder": "119.5",
+          "openFairOdds": "+111",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "119.5",
+          "openBookOverUnder": "119.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "draftkings": {
+              "odds": "+100",
+              "overUnder": "119.5",
+              "lastUpdatedAt": "2025-02-14T23:30:09.000Z",
+              "available": true
+            }
+          }
+        },
+        "points-home-game-ou-under": {
+          "oddID": "points-home-game-ou-under",
+          "opposingOddID": "points-home-game-ou-over",
+          "marketName": "Los Angeles Lakers Points Over/Under",
+          "statID": "points",
+          "statEntityID": "home",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-111",
+          "bookOdds": "-125",
+          "fairOverUnder": "119.5",
+          "bookOverUnder": "119.5",
+          "openFairOdds": "-111",
+          "openBookOdds": "-125",
+          "openFairOverUnder": "119.5",
+          "openBookOverUnder": "119.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "draftkings": {
+              "odds": "-125",
+              "overUnder": "119.5",
+              "lastUpdatedAt": "2025-02-14T23:30:09.000Z",
+              "available": true
+            }
+          }
+        }
+      },
+      "teams": {
+        "home": {
+          "teamID": "LOS_ANGELES_LAKERS_NBA",
+          "names": {
+            "long": "Los Angeles Lakers",
+            "medium": "Lakers",
+            "short": "LAL",
+            "nickname": "Lakers",
+            "location": "Los Angeles"
+          },
+          "colors": {
+            "primary": "#552582",
+            "secondary": "#FDB927",
+            "primaryContrast": "#FFFFFF",
+            "secondaryContrast": "#552582"
+          },
+          "statEntityID": "home"
+        },
+        "away": {
+          "teamID": "CHARLOTTE_HORNETS_NBA",
+          "names": {
+            "long": "Charlotte Hornets",
+            "medium": "Hornets",
+            "short": "CHA",
+            "nickname": "Hornets",
+            "location": "Charlotte"
+          },
+          "colors": {
+            "primary": "#008CA8",
+            "secondary": "#1D1160",
+            "primaryContrast": "#000000",
+            "secondaryContrast": "#008CA8"
+          },
+          "statEntityID": "away"
+        }
+      },
+      "status": {
+        "started": false,
+        "completed": false,
+        "cancelled": false,
+        "ended": false,
+        "live": false,
+        "delayed": false,
+        "hardStart": true,
+        "finalized": false,
+        "displayLong": "Upcoming",
+        "currentPeriodID": "",
+        "previousPeriodID": "",
+        "displayShort": "",
+        "oddsPresent": true,
+        "oddsAvailable": true,
+        "inBreak": false,
+        "startsAt": "2025-02-20T03:00:00.000Z"
+      },
+      "players": {},
+      "results": {}
+    },
+    {
+      "eventID": "hAuKG2mqMdvud6wNueFM",
+      "sportID": "BASKETBALL",
+      "leagueID": "NBA",
+      "type": "match",
+      "info": {
+        "seasonWeek": "NBA 24/25"
+      },
+      "odds": {
+        "points-home-game-ml-home": {
+          "oddID": "points-home-game-ml-home",
+          "opposingOddID": "points-away-game-ml-away",
+          "marketName": "Moneyline",
+          "statID": "points",
+          "statEntityID": "home",
+          "periodID": "game",
+          "betTypeID": "ml",
+          "sideID": "home",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-580",
+          "bookOdds": "-833",
+          "openFairOdds": "-580",
+          "openBookOdds": "-833",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-800",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true,
+              "deeplink": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?fdId%5B0%5D=754.112150656&marketId%5B0%5D=42.479387677&selectionId%5B0%5D=5368712"
+            },
+            "paddypower": {
+              "odds": "-900",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "unknown": {
+              "odds": "-833",
+              "lastUpdatedAt": "2025-02-15T00:08:25.000Z",
+              "available": true
+            },
+            "betclic": {
+              "odds": "-1000",
+              "lastUpdatedAt": "2025-02-15T00:06:54.000Z",
+              "available": true
+            },
+            "sportsbet": {
+              "odds": "-833",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "mybookie": {
+              "odds": "-909",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "draftkings": {
+              "odds": "-800",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true,
+              "deeplink": "https://sportsbook.draftkings.com/event/31817440?outcomes=0ML78666481_1&sgp=1"
+            },
+            "neds": {
+              "odds": "-833",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "ladbrokes": {
+              "odds": "-833",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            },
+            "888sport": {
+              "odds": "-800",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "tab": {
+              "odds": "-769",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "betrsportsbook": {
+              "odds": "-769",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            },
+            "betfairsportsbook": {
+              "odds": "-909",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "betrivers": {
+              "odds": "-910",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "fourwinds": {
+              "odds": "-910",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "betparx": {
+              "odds": "-910",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "ballybet": {
+              "odds": "-910",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "unibet": {
+              "odds": "-909",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "tabtouch": {
+              "odds": "-910",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            },
+            "caesars": {
+              "odds": "-800",
+              "lastUpdatedAt": "2025-02-15T00:09:03.866Z",
+              "available": true
+            },
+            "williamhill": {
+              "odds": "-800",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "gtbets": {
+              "odds": "-800",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            },
+            "betfairexchange": {
+              "odds": "-909",
+              "lastUpdatedAt": "2025-02-15T00:08:26.000Z",
+              "available": true
+            },
+            "boylesports": {
+              "odds": "-900",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            },
+            "marathonbet": {
+              "odds": "-833",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "betway": {
+              "odds": "-800",
+              "lastUpdatedAt": "2025-02-15T00:08:25.000Z",
+              "available": true
+            },
+            "espnbet": {
+              "odds": "-1000",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "thescorebet": {
+              "odds": "-1000",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "suprabets": {
+              "odds": "-714",
+              "lastUpdatedAt": "2025-02-15T00:06:43.000Z",
+              "available": true
+            },
+            "nordicbet": {
+              "odds": "-833",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "betsson": {
+              "odds": "-833",
+              "lastUpdatedAt": "2025-02-15T00:08:25.000Z",
+              "available": true
+            },
+            "playup": {
+              "odds": "-833",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "topsport": {
+              "odds": "-909",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            }
+          }
+        },
+        "points-all-game-ou-under": {
+          "oddID": "points-all-game-ou-under",
+          "opposingOddID": "points-all-game-ou-over",
+          "marketName": "Over/Under",
+          "statID": "points",
+          "statEntityID": "all",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+101",
+          "bookOdds": "-110",
+          "fairOverUnder": "223.5",
+          "bookOverUnder": "223.5",
+          "openFairOdds": "+101",
+          "openBookOdds": "-110",
+          "openFairOverUnder": "223.5",
+          "openBookOverUnder": "223.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-110",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true,
+              "deeplink": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?fdId%5B0%5D=754.112351868&marketId%5B0%5D=42.479760460&selectionId%5B0%5D=7017824"
+            },
+            "sportsbet": {
+              "odds": "-111",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "mybookie": {
+              "odds": "-110",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "draftkings": {
+              "odds": "-112",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true,
+              "deeplink": "https://sportsbook.draftkings.com/event/31817440?outcomes=0OU78666481U22350_3&sgp=1"
+            },
+            "888sport": {
+              "odds": "-118",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "1xbet": {
+              "odds": "-110",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "betrivers": {
+              "odds": "-109",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "fourwinds": {
+              "odds": "-109",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "betparx": {
+              "odds": "-109",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "ballybet": {
+              "odds": "-109",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "virginbet": {
+              "odds": "-109",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "livescorebet": {
+              "odds": "-109",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "casumo": {
+              "odds": "-113",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "unibet": {
+              "odds": "-109",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "leovegas": {
+              "odds": "-120",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "grosvenor": {
+              "odds": "-112",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "tabtouch": {
+              "odds": "-110",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            },
+            "caesars": {
+              "odds": "-110",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:09:03.866Z",
+              "available": true
+            },
+            "gtbets": {
+              "odds": "-109",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            },
+            "unknown": {
+              "odds": "-111",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:25.000Z",
+              "available": true
+            },
+            "espnbet": {
+              "odds": "-110",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "thescorebet": {
+              "odds": "-110",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "nordicbet": {
+              "odds": "-109",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "betsson": {
+              "odds": "-109",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:25.000Z",
+              "available": true
+            },
+            "playup": {
+              "odds": "-108",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "topsport": {
+              "odds": "-114",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            }
+          }
+        },
+        "points-home-game-sp-home": {
+          "oddID": "points-home-game-sp-home",
+          "opposingOddID": "points-away-game-sp-away",
+          "marketName": "Spread",
+          "statID": "points",
+          "statEntityID": "home",
+          "periodID": "game",
+          "betTypeID": "sp",
+          "sideID": "home",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+101",
+          "bookOdds": "-109",
+          "fairSpread": "-12.5",
+          "bookSpread": "-13.5",
+          "openFairOdds": "+101",
+          "openBookOdds": "-109",
+          "openFairSpread": "-12.5",
+          "openBookSpread": "-13.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-108",
+              "spread": "-13.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true,
+              "deeplink": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?fdId%5B0%5D=754.112150657&marketId%5B0%5D=42.479387678&selectionId%5B0%5D=5368712"
+            },
+            "sportsbet": {
+              "odds": "-111",
+              "spread": "-13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "neds": {
+              "odds": "-111",
+              "spread": "-12.5",
+              "lastUpdatedAt": "2025-02-14T05:07:45.000Z",
+              "available": false
+            },
+            "ladbrokes": {
+              "odds": "-111",
+              "spread": "-12.5",
+              "lastUpdatedAt": "2025-02-14T05:07:46.000Z",
+              "available": false
+            },
+            "mybookie": {
+              "odds": "-110",
+              "spread": "-13",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "draftkings": {
+              "odds": "-110",
+              "spread": "-13",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true,
+              "deeplink": "https://sportsbook.draftkings.com/event/31817440?outcomes=0HC78666481N1300_1&sgp=1"
+            },
+            "888sport": {
+              "odds": "-105",
+              "spread": "-13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "tab": {
+              "odds": "-111",
+              "spread": "-13",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "1xbet": {
+              "odds": "-102",
+              "spread": "-13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "betrivers": {
+              "odds": "-109",
+              "spread": "-13.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "fourwinds": {
+              "odds": "-109",
+              "spread": "-13.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "betparx": {
+              "odds": "-109",
+              "spread": "-13.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "ballybet": {
+              "odds": "-109",
+              "spread": "-13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "casumo": {
+              "odds": "-113",
+              "spread": "-13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "unibet": {
+              "odds": "-109",
+              "spread": "-13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "leovegas": {
+              "odds": "-121",
+              "spread": "-13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "grosvenor": {
+              "odds": "-112",
+              "spread": "-13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "tabtouch": {
+              "odds": "-110",
+              "spread": "-13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            },
+            "caesars": {
+              "odds": "-110",
+              "spread": "-13",
+              "lastUpdatedAt": "2025-02-15T00:09:03.866Z",
+              "available": true
+            },
+            "gtbets": {
+              "odds": "-109",
+              "spread": "-13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            },
+            "unknown": {
+              "odds": "-118",
+              "spread": "-13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:25.000Z",
+              "available": true
+            },
+            "espnbet": {
+              "odds": "-110",
+              "spread": "-13.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "thescorebet": {
+              "odds": "-110",
+              "spread": "-13.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "nordicbet": {
+              "odds": "-111",
+              "spread": "-12.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "betsson": {
+              "odds": "-111",
+              "spread": "-12.5",
+              "lastUpdatedAt": "2025-02-15T00:08:25.000Z",
+              "available": true
+            },
+            "playup": {
+              "odds": "-111",
+              "spread": "-12.5",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "topsport": {
+              "odds": "-116",
+              "spread": "-12.5",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            }
+          }
+        },
+        "points-away-game-ml-away": {
+          "oddID": "points-away-game-ml-away",
+          "opposingOddID": "points-home-game-ml-home",
+          "marketName": "Moneyline",
+          "statID": "points",
+          "statEntityID": "away",
+          "periodID": "game",
+          "betTypeID": "ml",
+          "sideID": "away",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+580",
+          "bookOdds": "+550",
+          "openFairOdds": "+580",
+          "openBookOdds": "+550",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+610",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true,
+              "deeplink": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?fdId%5B0%5D=754.112150656&marketId%5B0%5D=42.479387677&selectionId%5B0%5D=8622709"
+            },
+            "paddypower": {
+              "odds": "+500",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "unknown": {
+              "odds": "+525",
+              "lastUpdatedAt": "2025-02-15T00:08:25.000Z",
+              "available": true
+            },
+            "betclic": {
+              "odds": "+430",
+              "lastUpdatedAt": "2025-02-15T00:06:54.000Z",
+              "available": true
+            },
+            "sportsbet": {
+              "odds": "+580",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "mybookie": {
+              "odds": "+516",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "draftkings": {
+              "odds": "+550",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true,
+              "deeplink": "https://sportsbook.draftkings.com/event/31817440?outcomes=0ML78666481_3&sgp=1"
+            },
+            "neds": {
+              "odds": "+550",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "ladbrokes": {
+              "odds": "+550",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            },
+            "888sport": {
+              "odds": "+510",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "tab": {
+              "odds": "+550",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "betrsportsbook": {
+              "odds": "+500",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            },
+            "betfairsportsbook": {
+              "odds": "+500",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "betrivers": {
+              "odds": "+600",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "fourwinds": {
+              "odds": "+600",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "betparx": {
+              "odds": "+550",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "ballybet": {
+              "odds": "+600",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "unibet": {
+              "odds": "+550",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "tabtouch": {
+              "odds": "+550",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            },
+            "caesars": {
+              "odds": "+590",
+              "lastUpdatedAt": "2025-02-15T00:09:03.866Z",
+              "available": true
+            },
+            "williamhill": {
+              "odds": "+550",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "gtbets": {
+              "odds": "+550",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            },
+            "betfairexchange": {
+              "odds": "-417",
+              "lastUpdatedAt": "2025-02-15T00:08:26.000Z",
+              "available": true
+            },
+            "boylesports": {
+              "odds": "+500",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            },
+            "marathonbet": {
+              "odds": "+540",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "betway": {
+              "odds": "+550",
+              "lastUpdatedAt": "2025-02-15T00:08:25.000Z",
+              "available": true
+            },
+            "espnbet": {
+              "odds": "+600",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "thescorebet": {
+              "odds": "+600",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "suprabets": {
+              "odds": "+653",
+              "lastUpdatedAt": "2025-02-15T00:06:43.000Z",
+              "available": true
+            },
+            "nordicbet": {
+              "odds": "+560",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "betsson": {
+              "odds": "+560",
+              "lastUpdatedAt": "2025-02-15T00:08:25.000Z",
+              "available": true
+            },
+            "playup": {
+              "odds": "+525",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "topsport": {
+              "odds": "+500",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            }
+          }
+        },
+        "points-all-game-ou-over": {
+          "oddID": "points-all-game-ou-over",
+          "opposingOddID": "points-all-game-ou-under",
+          "marketName": "Over/Under",
+          "statID": "points",
+          "statEntityID": "all",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-101",
+          "bookOdds": "-112",
+          "fairOverUnder": "223.5",
+          "bookOverUnder": "223.5",
+          "openFairOdds": "-101",
+          "openBookOdds": "-112",
+          "openFairOverUnder": "223.5",
+          "openBookOverUnder": "223.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-110",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true,
+              "deeplink": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?fdId%5B0%5D=754.112351868&marketId%5B0%5D=42.479760460&selectionId%5B0%5D=7017823"
+            },
+            "sportsbet": {
+              "odds": "-111",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "mybookie": {
+              "odds": "-110",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "draftkings": {
+              "odds": "-108",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true,
+              "deeplink": "https://sportsbook.draftkings.com/event/31817440?outcomes=0OU78666481O22350_1&sgp=1"
+            },
+            "888sport": {
+              "odds": "-110",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "1xbet": {
+              "odds": "-105",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "betrivers": {
+              "odds": "-112",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "fourwinds": {
+              "odds": "-112",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "betparx": {
+              "odds": "-112",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "ballybet": {
+              "odds": "-112",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "virginbet": {
+              "odds": "-111",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "livescorebet": {
+              "odds": "-111",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "casumo": {
+              "odds": "-115",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "unibet": {
+              "odds": "-112",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "leovegas": {
+              "odds": "-122",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "grosvenor": {
+              "odds": "-114",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "tabtouch": {
+              "odds": "-113",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            },
+            "caesars": {
+              "odds": "-110",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:09:03.866Z",
+              "available": true
+            },
+            "gtbets": {
+              "odds": "-109",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            },
+            "unknown": {
+              "odds": "-125",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:25.000Z",
+              "available": true
+            },
+            "espnbet": {
+              "odds": "-110",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "thescorebet": {
+              "odds": "-110",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "nordicbet": {
+              "odds": "-114",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "betsson": {
+              "odds": "-114",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:25.000Z",
+              "available": true
+            },
+            "playup": {
+              "odds": "-114",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "topsport": {
+              "odds": "-122",
+              "overUnder": "223.5",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            }
+          }
+        },
+        "points-away-game-sp-away": {
+          "oddID": "points-away-game-sp-away",
+          "opposingOddID": "points-home-game-sp-home",
+          "marketName": "Spread",
+          "statID": "points",
+          "statEntityID": "away",
+          "periodID": "game",
+          "betTypeID": "sp",
+          "sideID": "away",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-101",
+          "bookOdds": "-112",
+          "fairSpread": "+12.5",
+          "bookSpread": "+13.5",
+          "openFairOdds": "-101",
+          "openBookOdds": "-112",
+          "openFairSpread": "+12.5",
+          "openBookSpread": "+13.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-112",
+              "spread": "+13.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true,
+              "deeplink": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?fdId%5B0%5D=754.112150657&marketId%5B0%5D=42.479387678&selectionId%5B0%5D=8622709"
+            },
+            "sportsbet": {
+              "odds": "-111",
+              "spread": "+13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "neds": {
+              "odds": "-111",
+              "spread": "+12.5",
+              "lastUpdatedAt": "2025-02-14T05:07:45.000Z",
+              "available": false
+            },
+            "ladbrokes": {
+              "odds": "-111",
+              "spread": "+12.5",
+              "lastUpdatedAt": "2025-02-14T05:07:46.000Z",
+              "available": false
+            },
+            "mybookie": {
+              "odds": "-110",
+              "spread": "+13",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "draftkings": {
+              "odds": "-110",
+              "spread": "+13",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true,
+              "deeplink": "https://sportsbook.draftkings.com/event/31817440?outcomes=0HC78666481P1300_3&sgp=1"
+            },
+            "888sport": {
+              "odds": "-118",
+              "spread": "+13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "tab": {
+              "odds": "-111",
+              "spread": "+13",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "1xbet": {
+              "odds": "-114",
+              "spread": "+13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "betrivers": {
+              "odds": "-112",
+              "spread": "+13.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "fourwinds": {
+              "odds": "-112",
+              "spread": "+13.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "betparx": {
+              "odds": "-112",
+              "spread": "+13.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "ballybet": {
+              "odds": "-112",
+              "spread": "+13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "casumo": {
+              "odds": "-114",
+              "spread": "+13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "unibet": {
+              "odds": "-111",
+              "spread": "+13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "leovegas": {
+              "odds": "-122",
+              "spread": "+13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "grosvenor": {
+              "odds": "-113",
+              "spread": "+13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "tabtouch": {
+              "odds": "-112",
+              "spread": "+13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            },
+            "caesars": {
+              "odds": "-110",
+              "spread": "+13",
+              "lastUpdatedAt": "2025-02-15T00:09:03.866Z",
+              "available": true
+            },
+            "gtbets": {
+              "odds": "-109",
+              "spread": "+13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            },
+            "unknown": {
+              "odds": "-118",
+              "spread": "+13.5",
+              "lastUpdatedAt": "2025-02-15T00:08:25.000Z",
+              "available": true
+            },
+            "espnbet": {
+              "odds": "-110",
+              "spread": "+13.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "thescorebet": {
+              "odds": "-110",
+              "spread": "+13.5",
+              "lastUpdatedAt": "2025-02-15T00:10:03.366Z",
+              "available": true
+            },
+            "nordicbet": {
+              "odds": "-114",
+              "spread": "+12.5",
+              "lastUpdatedAt": "2025-02-15T00:08:23.000Z",
+              "available": true
+            },
+            "betsson": {
+              "odds": "-114",
+              "spread": "+12.5",
+              "lastUpdatedAt": "2025-02-15T00:08:25.000Z",
+              "available": true
+            },
+            "playup": {
+              "odds": "-110",
+              "spread": "+12.5",
+              "lastUpdatedAt": "2025-02-15T00:08:22.000Z",
+              "available": true
+            },
+            "topsport": {
+              "odds": "-114",
+              "spread": "+12.5",
+              "lastUpdatedAt": "2025-02-15T00:08:24.000Z",
+              "available": true
+            }
+          }
+        },
+        "points-away-game-ou-under": {
+          "oddID": "points-away-game-ou-under",
+          "opposingOddID": "points-away-game-ou-over",
+          "marketName": "Charlotte Hornets Points Over/Under",
+          "statID": "points",
+          "statEntityID": "away",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-130",
+          "fairOverUnder": "104.5",
+          "bookOverUnder": "105.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-130",
+          "openFairOverUnder": "104.5",
+          "openBookOverUnder": "105.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "draftkings": {
+              "odds": "-130",
+              "overUnder": "105.5",
+              "lastUpdatedAt": "2025-02-14T23:30:09.000Z",
+              "available": true
+            }
+          }
+        },
+        "points-away-game-ou-over": {
+          "oddID": "points-away-game-ou-over",
+          "opposingOddID": "points-away-game-ou-under",
+          "marketName": "Charlotte Hornets Points Over/Under",
+          "statID": "points",
+          "statEntityID": "away",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "+100",
+          "fairOverUnder": "104.5",
+          "bookOverUnder": "105.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "104.5",
+          "openBookOverUnder": "105.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "draftkings": {
+              "odds": "+100",
+              "overUnder": "105.5",
+              "lastUpdatedAt": "2025-02-14T23:30:09.000Z",
+              "available": true
+            }
+          }
+        },
+        "points-home-game-ou-over": {
+          "oddID": "points-home-game-ou-over",
+          "opposingOddID": "points-home-game-ou-under",
+          "marketName": "Los Angeles Lakers Points Over/Under",
+          "statID": "points",
+          "statEntityID": "home",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+111",
+          "bookOdds": "+100",
+          "fairOverUnder": "119.5",
+          "bookOverUnder": "119.5",
+          "openFairOdds": "+111",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "119.5",
+          "openBookOverUnder": "119.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "draftkings": {
+              "odds": "+100",
+              "overUnder": "119.5",
+              "lastUpdatedAt": "2025-02-14T23:30:09.000Z",
+              "available": true
+            }
+          }
+        },
+        "points-home-game-ou-under": {
+          "oddID": "points-home-game-ou-under",
+          "opposingOddID": "points-home-game-ou-over",
+          "marketName": "Los Angeles Lakers Points Over/Under",
+          "statID": "points",
+          "statEntityID": "home",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-111",
+          "bookOdds": "-125",
+          "fairOverUnder": "119.5",
+          "bookOverUnder": "119.5",
+          "openFairOdds": "-111",
+          "openBookOdds": "-125",
+          "openFairOverUnder": "119.5",
+          "openBookOverUnder": "119.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "draftkings": {
+              "odds": "-125",
+              "overUnder": "119.5",
+              "lastUpdatedAt": "2025-02-14T23:30:09.000Z",
+              "available": true
+            }
+          }
+        }
+      },
+      "teams": {
+        "home": {
+          "teamID": "LOS_ANGELES_LAKERS_NBA",
+          "names": {
+            "long": "Los Angeles Lakers",
+            "medium": "Lakers",
+            "short": "LAL",
+            "nickname": "Lakers",
+            "location": "Los Angeles"
+          },
+          "colors": {
+            "primary": "#552582",
+            "secondary": "#FDB927",
+            "primaryContrast": "#FFFFFF",
+            "secondaryContrast": "#552582"
+          },
+          "statEntityID": "home"
+        },
+        "away": {
+          "teamID": "CHARLOTTE_HORNETS_NBA",
+          "names": {
+            "long": "Charlotte Hornets",
+            "medium": "Hornets",
+            "short": "CHA",
+            "nickname": "Hornets",
+            "location": "Charlotte"
+          },
+          "colors": {
+            "primary": "#008CA8",
+            "secondary": "#1D1160",
+            "primaryContrast": "#000000",
+            "secondaryContrast": "#008CA8"
+          },
+          "statEntityID": "away"
+        }
+      },
+      "status": {
+        "started": false,
+        "completed": false,
+        "cancelled": false,
+        "ended": false,
+        "live": false,
+        "delayed": false,
+        "hardStart": true,
+        "finalized": false,
+        "displayLong": "Upcoming",
+        "currentPeriodID": "",
+        "previousPeriodID": "",
+        "displayShort": "",
+        "oddsPresent": true,
+        "oddsAvailable": true,
+        "inBreak": false,
+        "startsAt": "2025-02-20T03:00:00.000Z"
+      },
+      "players": {},
+      "results": {}
+    }
+  ]
+}
