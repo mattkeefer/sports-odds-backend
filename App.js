@@ -203,18 +203,18 @@ app.get('/odds', async (req, res) => {
 
 app.get('/good-bets', async (req, res) => {
   const {
-    minOdds = -400,
-    maxOdds = 300,
-    minEV = 0,
-    limit = 1,
+    minOdds = '-400',
+    maxOdds = '300',
+    minEV = '0',
+    limit = '1',
     leagueID = 'NBA',
-    live,
-    comparePinnacle = false,
-    bankroll = 1000,
+    live = 'false',
+    comparePinnacle = 'false',
+    bankroll = '1000',
   } = req.query;
 
   const events = await fetchOdds({
-    limit,
+    limit: parseInt(limit),
     bookmakerID: BOOKS_AS_COMMA_LIST,
     leagueID,
     finalized: false,
@@ -229,7 +229,8 @@ app.get('/good-bets', async (req, res) => {
 
   const betsForEvents = events.map(
       event => processEventBets(event, parseInt(minOdds), parseInt(maxOdds),
-          parseFloat(minEV), comparePinnacle, parseFloat(bankroll))).filter(
+          parseFloat(minEV), comparePinnacle === 'true',
+          parseFloat(bankroll))).filter(
       event => Object.keys(event.odds).length > 0);
   res.json(betsForEvents);
 });
