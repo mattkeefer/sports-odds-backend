@@ -117,7 +117,7 @@ function processEventBets(event, minOdds, maxOdds, minEV,
     return null;
   }
 
-  const {eventID, sportID, leagueID, type, teams, odds} = event;
+  const {eventID, sportID, leagueID, type, teams, odds, status} = event;
   const returnEventObject = {
     eventID: eventID,
     sportID: sportID,
@@ -127,6 +127,7 @@ function processEventBets(event, minOdds, maxOdds, minEV,
     awayTeam: teams?.away?.names?.medium,
     homeColor: teams?.home?.colors?.primary,
     awayColor: teams?.away?.colors?.primary,
+    startsAt: status.startsAt,
     odds: {},
   };
 
