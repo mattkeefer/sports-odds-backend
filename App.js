@@ -31,7 +31,7 @@ app.use(express.json());
 const PORT = process.env.PORT || 4000;
 
 // Sports Game Odds API
-const ODDS_API_URL = 'https://api.sportsgameodds.com/v2/events';
+const ODDS_API_URL = 'https://api.sportsgameodds.com/v2';
 const SPORTSBOOKS = {
   fanduel: 'FanDuel',
   fanatics: 'Fanatics',
@@ -66,19 +66,28 @@ function convertAmericanOddsToImpliedProbability(americanOdds) {
 async function fetchOdds(params) {
   try {
     const response = await axios.get(
-        `${ODDS_API_URL}`,
+        `${ODDS_API_URL}/events`,
         {
           params: params,
           headers: {
             'x-api-key': process.env.ODDS_API_KEY,
           },
         });
-    // const response = require('./example.json');
     return response.data.data;
   } catch (error) {
     console.error(error);
     return null;
   }
+}
+
+async function fetchUsageLimits() {
+  const response = await axios.get(
+      `${ODDS_API_URL}/account/usage`, {
+        headers: {
+          'x-api-key': process.env.ODDS_API_KEY,
+        },
+      });
+  return response.data.data;
 }
 
 /**
@@ -220,6 +229,7 @@ function findBetterBetsThanPinny(event, minOdds, maxOdds, minEV) {
   return returnEventObject;
 }
 
+
 app.get('/odds', async (req, res) => {
   res.json(await fetchOdds({...req.query}));
 });
@@ -232,7 +242,7 @@ app.get('/positive-ev-bets', async (req, res) => {
   const minEV = req.query.minEV || 0;
 
   const events = await fetchOdds({
-    limit: req.query.limit || 10,
+    limit: req.query.limit || 1,
     bookmakerID: books,
     leagueID: req.query.leagueID || "NBA",
     finalized: false,
@@ -259,7 +269,7 @@ app.get('/pinny-bets', async (req, res) => {
   const minEV = req.query.minEV || 0;
 
   const events = await fetchOdds({
-    limit: req.query.limit || 5,
+    limit: req.query.limit || 1,
     bookmakerID: books,
     leagueID: req.query.leagueID || "NBA",
     finalized: false,
@@ -277,6 +287,12 @@ app.get('/pinny-bets', async (req, res) => {
       event => Object.keys(event.odds).length > 0);
   res.json(betsForEvents);
 });
+
+app.get('/limits', async (req, res) => {
+  const limits = await fetchUsageLimits();
+  res.json(limits);
+});
+
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
