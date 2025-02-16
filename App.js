@@ -41,6 +41,7 @@ const SPORTSBOOKS = {
   caesars: 'Caesars',
   pinnacle: 'Pinnacle',
 };
+const BOOKS_AS_COMMA_LIST = Object.keys(SPORTSBOOKS).join(',');
 
 function convertAmericanOddsToDecimalOdds(americanOdds) {
   if (americanOdds < 0) {
@@ -56,6 +57,15 @@ function convertAmericanOddsToImpliedProbability(americanOdds) {
   } else {
     return 100 / (americanOdds + 100)
   }
+}
+
+function determineBetSizeUsingKellyCriterion(bankroll, betOdds, trueOdds,
+    kellyFraction = 0.25) {
+  const p = convertAmericanOddsToImpliedProbability(trueOdds);
+  const q = 1 - p;
+  const b = convertAmericanOddsToDecimalOdds(betOdds) - 1;
+  const kelly = (b * p - q) / b
+  return kelly * kellyFraction * bankroll;
 }
 
 /**
@@ -75,7 +85,6 @@ async function fetchOdds(params) {
         });
     return response.data.data;
   } catch (error) {
-    console.error(error);
     return null;
   }
 }
@@ -123,7 +132,8 @@ function findPositiveEvBetsForEvent(event, minOdds, maxOdds, minEV) {
     const goodBookEntries = Object.entries(marketEntry.byBookmaker).filter(
         ([k, v]) => Object.keys(SPORTSBOOKS).includes(k) &&
             parseInt(v.odds) > fairOdds && parseInt(v.odds) <= maxOdds &&
-            parseInt(v.odds) >= minOdds && v.overUnder === marketEntry.fairOverUnder);
+            parseInt(v.odds) >= minOdds && v.overUnder
+            === marketEntry.fairOverUnder);
     if (goodBookEntries.length > 0) {
       returnEventObject.odds[market] = {
         marketName: marketEntry.marketName,
@@ -149,7 +159,8 @@ function findPositiveEvBetsForEvent(event, minOdds, maxOdds, minEV) {
         }
       });
 
-      if (Object.keys(returnEventObject.odds[market].positiveEvBets).length === 0) {
+      if (Object.keys(returnEventObject.odds[market].positiveEvBets).length
+          === 0) {
         delete returnEventObject.odds[market];
       }
     }
@@ -221,7 +232,8 @@ function findBetterBetsThanPinny(event, minOdds, maxOdds, minEV) {
         }
       });
 
-      if (Object.keys(returnEventObject.odds[market].positiveEvBets).length === 0) {
+      if (Object.keys(returnEventObject.odds[market].positiveEvBets).length
+          === 0) {
         delete returnEventObject.odds[market];
       }
     }
@@ -229,29 +241,31 @@ function findBetterBetsThanPinny(event, minOdds, maxOdds, minEV) {
   return returnEventObject;
 }
 
-
 app.get('/odds', async (req, res) => {
   res.json(await fetchOdds({...req.query}));
 });
 
 app.get('/positive-ev-bets', async (req, res) => {
-  const books = Object.keys(SPORTSBOOKS).reduce(
-      (prev, curr, currIndex) => prev += ',' + curr);
-  const minOdds = req.query.minOdds || -400;
-  const maxOdds = req.query.maxOdds || 300;
-  const minEV = req.query.minEV || 0;
+  const {
+    minOdds = -400,
+    maxOdds = 300,
+    minEV = 0,
+    limit = 1,
+    leagueID = 'NBA',
+    live
+  } = req.query;
 
   const events = await fetchOdds({
-    limit: req.query.limit || 1,
-    bookmakerID: books,
-    leagueID: req.query.leagueID || "NBA",
+    limit,
+    bookmakerID: BOOKS_AS_COMMA_LIST,
+    leagueID,
     finalized: false,
     oddsAvailable: true,
-    live: req.query.live,
+    live,
   });
 
   if (!events) {
-    res.status(404).send({error: "No events found for search criteria."});
+    res.sendStatus(404);
     return;
   }
 
@@ -262,23 +276,27 @@ app.get('/positive-ev-bets', async (req, res) => {
 });
 
 app.get('/pinny-bets', async (req, res) => {
-  const books = Object.keys(SPORTSBOOKS).reduce(
-      (prev, curr, currIndex) => prev += ',' + curr);
-  const minOdds = req.query.minOdds || -400;
-  const maxOdds = req.query.maxOdds || 300;
-  const minEV = req.query.minEV || 0;
+
+  const {
+    minOdds = -400,
+    maxOdds = 300,
+    minEV = 0,
+    limit = 1,
+    leagueID = 'NBA',
+    live
+  } = req.query;
 
   const events = await fetchOdds({
-    limit: req.query.limit || 1,
-    bookmakerID: books,
-    leagueID: req.query.leagueID || "NBA",
+    limit,
+    bookmakerID: BOOKS_AS_COMMA_LIST,
+    leagueID,
     finalized: false,
     oddsAvailable: true,
-    live: req.query.live,
+    live,
   });
 
   if (!events) {
-    res.status(404).send({error: "No events found for search criteria."});
+    res.sendStatus(404);
     return;
   }
 
@@ -293,6 +311,14 @@ app.get('/limits', async (req, res) => {
   res.json(limits);
 });
 
+app.get('/betsize', async (req, res) => {
+  const betSize = determineBetSizeUsingKellyCriterion(
+      parseInt(req.query.bankroll),
+      parseInt(req.query.betOdds),
+      parseInt(req.query.trueOdds)
+  );
+  res.json(betSize);
+});
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
