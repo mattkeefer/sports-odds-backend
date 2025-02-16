@@ -108,10 +108,11 @@ async function fetchUsageLimits() {
  * @param minEV The minimum EV for a bet to be considered
  * @param comparePinnacle Whether the bet odds should be compared to Pinnacle
  *                        vs. the "fair" odds.
+ * @param bankroll The amount of bankroll the bettor has
  * @returns {*[]} A list of bets with a positive EV (based on the input values)
  */
 function processEventBets(event, minOdds, maxOdds, minEV,
-    comparePinnacle = false) {
+    comparePinnacle = false, bankroll = 1000) {
   if (!event?.odds) {
     return null;
   }
@@ -180,6 +181,9 @@ function processEventBets(event, minOdds, maxOdds, minEV,
             odds: bookOdds,
             overUnder: entry.overUnder,
             ev,
+            recommendedBetSize: determineBetSizeUsingKellyCriterion(
+                bankroll, bookOdds, referenceOdds
+            ),
           };
         }
       });
@@ -206,6 +210,7 @@ app.get('/good-bets', async (req, res) => {
     leagueID = 'NBA',
     live,
     comparePinnacle = false,
+    bankroll = 1000,
   } = req.query;
 
   const events = await fetchOdds({
@@ -224,7 +229,7 @@ app.get('/good-bets', async (req, res) => {
 
   const betsForEvents = events.map(
       event => processEventBets(event, parseInt(minOdds), parseInt(maxOdds),
-          parseFloat(minEV), comparePinnacle)).filter(
+          parseFloat(minEV), comparePinnacle, parseFloat(bankroll))).filter(
       event => Object.keys(event.odds).length > 0);
   res.json(betsForEvents);
 });
@@ -232,15 +237,6 @@ app.get('/good-bets', async (req, res) => {
 app.get('/limits', async (req, res) => {
   const limits = await fetchUsageLimits();
   res.json(limits);
-});
-
-app.get('/betsize', async (req, res) => {
-  const betSize = determineBetSizeUsingKellyCriterion(
-      parseInt(req.query.bankroll),
-      parseInt(req.query.betOdds),
-      parseInt(req.query.trueOdds)
-  );
-  res.json(betSize);
 });
 
 app.listen(PORT, () => {
