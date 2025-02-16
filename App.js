@@ -33,7 +33,7 @@ const PORT = process.env.PORT || 4000;
 // Sports Game Odds API
 const ODDS_API_URL = 'https://api.sportsgameodds.com/v2/events';
 const SPORTSBOOKS = {
-  fanduel: 'Fanduel',
+  fanduel: 'FanDuel',
   fanatics: 'Fanatics',
   betmgm: 'BetMGM',
   fliff: 'Fliff',
@@ -86,7 +86,7 @@ async function fetchOdds(params) {
  * @param event A sports event, containing different bets
  * @returns {*[]} A list of bets with a positive EV
  */
-function findPositiveEvBetsForEvent(event) {
+function findPositiveEvBetsForEvent(event, minOdds, maxOdds, minEV) {
   if (!event || !event.odds) {
     return null;
   }
@@ -113,26 +113,37 @@ function findPositiveEvBetsForEvent(event) {
     }
     const goodBookEntries = Object.entries(marketEntry.byBookmaker).filter(
         ([k, v]) => Object.keys(SPORTSBOOKS).includes(k) &&
-            parseInt(v.odds) > fairOdds && parseInt(v.odds) <= 300);
+            parseInt(v.odds) > fairOdds && parseInt(v.odds) <= maxOdds &&
+            parseInt(v.odds) >= minOdds && v.overUnder === marketEntry.fairOverUnder);
     if (goodBookEntries.length > 0) {
       returnEventObject.odds[market] = {
         marketName: marketEntry.marketName,
         sideID: marketEntry.sideID,
         fairOdds: fairOdds,
+        fairOverUnder: marketEntry.fairOverUnder,
         bookOdds: avgOdds,
+        bookOverUnder: marketEntry.bookOverUnder,
         positiveEvBets: {},
       };
+
+      goodBookEntries.forEach(([book, bookEntry]) => {
+        const bookOdds = parseInt(bookEntry.odds);
+        const ev = (convertAmericanOddsToImpliedProbability(fairOdds)
+            * convertAmericanOddsToDecimalOdds(bookOdds)) - 1;
+        if (ev > minEV) {
+          returnEventObject.odds[market].positiveEvBets[book] = {
+            name: SPORTSBOOKS[book],
+            odds: bookOdds,
+            overUnder: bookEntry.overUnder,
+            ev,
+          };
+        }
+      });
+
+      if (Object.keys(returnEventObject.odds[market].positiveEvBets).length === 0) {
+        delete returnEventObject.odds[market];
+      }
     }
-    goodBookEntries.forEach(([book, bookEntry]) => {
-      const bookOdds = parseInt(bookEntry.odds);
-      const ev = (convertAmericanOddsToImpliedProbability(fairOdds)
-          * convertAmericanOddsToDecimalOdds(bookOdds)) - 1;
-      returnEventObject.odds[market].positiveEvBets[book] = {
-        name: SPORTSBOOKS[book],
-        odds: bookOdds,
-        ev,
-      };
-    });
   });
   return returnEventObject;
 }
@@ -142,7 +153,7 @@ function findPositiveEvBetsForEvent(event) {
  * @param event A sports event, containing different bets
  * @returns {*[]} A list of bets with a positive EV
  */
-function findBetterBetsThanPinny(event) {
+function findBetterBetsThanPinny(event, minOdds, maxOdds, minEV) {
   if (!event || !event.odds) {
     return null;
   }
@@ -164,20 +175,26 @@ function findBetterBetsThanPinny(event) {
   marketEntries.forEach(([market, marketEntry]) => {
     const fairOdds = parseInt(marketEntry.fairOdds);
     const avgOdds = parseInt(marketEntry.bookOdds);
-    if (!marketEntry.byBookmaker || !Object.keys(marketEntry.byBookmaker).includes("pinnacle")) {
+    if (!marketEntry.byBookmaker || !Object.keys(
+        marketEntry.byBookmaker).includes("pinnacle")) {
       return;
     }
     const pinnyOdds = parseInt(marketEntry.byBookmaker.pinnacle.odds);
+    const pinnyOverUnder = parseInt(marketEntry.byBookmaker.pinnacle.overUnder);
     const goodBookEntries = Object.entries(marketEntry.byBookmaker).filter(
         ([k, v]) => Object.keys(SPORTSBOOKS).includes(k) &&
-            parseInt(v.odds) >= pinnyOdds && parseInt(v.odds) <= 300);
-    if (goodBookEntries.length > 1) {
+            parseInt(v.odds) > pinnyOdds && parseInt(v.odds) <= maxOdds &&
+            parseInt(v.odds) >= minOdds && v.overUnder === pinnyOverUnder);
+    if (goodBookEntries.length > 0) {
       returnEventObject.odds[market] = {
         marketName: marketEntry.marketName,
         sideID: marketEntry.sideID,
         fairOdds: fairOdds,
+        fairOverUnder: marketEntry.fairOverUnder,
         bookOdds: avgOdds,
+        bookOverUnder: marketEntry.bookOverUnder,
         pinnyOdds: pinnyOdds,
+        pinnyOverUnder: pinnyOverUnder,
         positiveEvBets: {},
       };
 
@@ -185,12 +202,19 @@ function findBetterBetsThanPinny(event) {
         const bookOdds = parseInt(bookEntry.odds);
         const ev = (convertAmericanOddsToImpliedProbability(pinnyOdds)
             * convertAmericanOddsToDecimalOdds(bookOdds)) - 1;
-        returnEventObject.odds[market].positiveEvBets[book] = {
-          name: SPORTSBOOKS[book],
-          odds: bookOdds,
-          ev,
-        };
+        if (ev > minEV) {
+          returnEventObject.odds[market].positiveEvBets[book] = {
+            name: SPORTSBOOKS[book],
+            odds: bookOdds,
+            overUnder: bookEntry.overUnder,
+            ev,
+          };
+        }
       });
+
+      if (Object.keys(returnEventObject.odds[market].positiveEvBets).length === 0) {
+        delete returnEventObject.odds[market];
+      }
     }
   });
   return returnEventObject;
@@ -203,8 +227,12 @@ app.get('/odds', async (req, res) => {
 app.get('/positive-ev-bets', async (req, res) => {
   const books = Object.keys(SPORTSBOOKS).reduce(
       (prev, curr, currIndex) => prev += ',' + curr);
-  let events = await fetchOdds({
-    limit: req.query.limit || 5,
+  const minOdds = req.query.minOdds || -400;
+  const maxOdds = req.query.maxOdds || 300;
+  const minEV = req.query.minEV || 0;
+
+  const events = await fetchOdds({
+    limit: req.query.limit || 10,
     bookmakerID: books,
     leagueID: req.query.leagueID || "NBA",
     finalized: false,
@@ -218,7 +246,7 @@ app.get('/positive-ev-bets', async (req, res) => {
   }
 
   const betsForEvents = events.map(
-      event => findPositiveEvBetsForEvent(event)).filter(
+      event => findPositiveEvBetsForEvent(event, minOdds, maxOdds, minEV)).filter(
       event => Object.keys(event.odds).length > 0);
   res.json(betsForEvents);
 });
@@ -226,7 +254,11 @@ app.get('/positive-ev-bets', async (req, res) => {
 app.get('/pinny-bets', async (req, res) => {
   const books = Object.keys(SPORTSBOOKS).reduce(
       (prev, curr, currIndex) => prev += ',' + curr);
-  let events = await fetchOdds({
+  const minOdds = req.query.minOdds || -400;
+  const maxOdds = req.query.maxOdds || 300;
+  const minEV = req.query.minEV || 0;
+
+  const events = await fetchOdds({
     limit: req.query.limit || 5,
     bookmakerID: books,
     leagueID: req.query.leagueID || "NBA",
@@ -241,11 +273,10 @@ app.get('/pinny-bets', async (req, res) => {
   }
 
   const betsForEvents = events.map(
-      event => findBetterBetsThanPinny(event)).filter(
+      event => findBetterBetsThanPinny(event, minOdds, maxOdds, minEV)).filter(
       event => Object.keys(event.odds).length > 0);
   res.json(betsForEvents);
 });
-
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
