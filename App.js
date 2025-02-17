@@ -212,6 +212,7 @@ app.get('/good-bets', async (req, res) => {
     live = 'false',
     comparePinnacle = 'false',
     bankroll = '1000',
+    startsBefore = '',
   } = req.query;
 
   const events = await fetchOdds({
@@ -221,6 +222,7 @@ app.get('/good-bets', async (req, res) => {
     finalized: false,
     oddsAvailable: true,
     live,
+    startsBefore,
   });
 
   if (!events) {
