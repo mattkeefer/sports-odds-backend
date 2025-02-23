@@ -59,6 +59,14 @@ function convertAmericanOddsToImpliedProbability(americanOdds) {
   }
 }
 
+function convertProbabilityToAmericanOdds(prob) {
+  if (prob > 0.5) {
+    return -Math.round(100 * prob / (1 - prob));
+  } else {
+    return Math.round(100 / prob - 100);
+  }
+}
+
 function determineBetSizeUsingKellyCriterion(bankroll, betOdds, trueOdds,
     kellyFraction = 0.25) {
   const p = convertAmericanOddsToImpliedProbability(trueOdds);
@@ -66,6 +74,16 @@ function determineBetSizeUsingKellyCriterion(bankroll, betOdds, trueOdds,
   const b = convertAmericanOddsToDecimalOdds(betOdds) - 1;
   const kelly = (b * p - q) / b
   return kelly * kellyFraction * bankroll;
+}
+
+function standardDevig(oddsArray) {
+  let probabilities = oddsArray.map(convertAmericanOddsToImpliedProbability);
+  let sum = probabilities.reduce((a, b) => a + b, 0);
+
+  let fairProbabilities = probabilities.map(p => p / sum);
+  let fairOdds = fairProbabilities.map(convertProbabilityToAmericanOdds);
+
+  return fairOdds[0];
 }
 
 /**
@@ -133,6 +151,7 @@ function processEventBets(event, minOdds, maxOdds, minEV,
 
   Object.entries(odds).forEach(([market, marketEntry]) => {
     const {
+      opposingOddID,
       fairOdds,
       bookOdds,
       byBookmaker,
@@ -141,11 +160,14 @@ function processEventBets(event, minOdds, maxOdds, minEV,
       fairOverUnder,
       bookOverUnder
     } = marketEntry;
-    if (!byBookmaker || (comparePinnacle && !byBookmaker.pinnacle)) {
+    if (!byBookmaker || (comparePinnacle && (!byBookmaker.pinnacle
+        || !odds[opposingOddID].byBookmaker?.pinnacle))) {
       return;
     }
 
-    const referenceOdds = comparePinnacle ? parseInt(byBookmaker.pinnacle.odds)
+    const referenceOdds = comparePinnacle ? standardDevig(
+            [parseInt(byBookmaker.pinnacle.odds),
+              parseInt(odds[opposingOddID].byBookmaker.pinnacle.odds)])
         : parseInt(fairOdds);
     const referenceOverUnder = comparePinnacle ? byBookmaker.pinnacle.overUnder
         : fairOverUnder;
@@ -161,16 +183,12 @@ function processEventBets(event, minOdds, maxOdds, minEV,
       returnEventObject.odds[market] = {
         marketName,
         sideID,
-        fairOdds: parseInt(fairOdds),
-        fairOverUnder,
+        fairOdds: referenceOdds,
+        fairOverUnder: referenceOverUnder,
         bookOdds: parseInt(bookOdds),
         bookOverUnder,
         positiveEvBets: {},
       };
-      if (comparePinnacle) {
-        returnEventObject.odds[market].pinnyOdds = referenceOdds;
-        returnEventObject.odds[market].pinnyOverUnder = referenceOverUnder;
-      }
 
       goodBets.forEach(([book, entry]) => {
         const bookOdds = parseInt(entry.odds);
